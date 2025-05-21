@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  transition: 0.7s ease-in;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.container {
+  position: relative;
+  width: 430px;
+  height: 500px;
+  background-color: transparent;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 5px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: 0.5s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-17px);
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+
+.round_bt_container {
+  cursor: pointer;
+  position: absolute;
+  float: left;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  margin-top: 20px;
+}
+
+.content {
+  width: 90%;
+  text-align: center;
+  color: #fff;
+}
+
+.content h2 {
+  font-size: 30px;
+  margin-top: 170px;
+}
+
+.content h4 {
+  color: #d8d3f8;
+}
+.content p {
+  margin: 30px 0;
+}
+
+.content .email {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #6b5fb8;
+  padding: 5px 0;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.social a {
+  color: #e9e7f6;
+  margin: 15px;
+  font-size: 25px;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
+.image {
+  position: absolute;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  padding: 0;
+  margin: 0;
+  border: 0px solid #eeeeee;
+  transition: all 0.2s ease;
+}
+
+.image img {
+  border-radius: 50%;
+}
+
+.round_bt_container:hover .ring {
+  width: 160px;
+  height: 160px;
+  border: 5px solid #fff;
+  padding: 15px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.round_bt_container:hover .inner_ring {
+  border: 2px solid #ffcfa7;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+.inner_ring {
+  top: -5px;
+  left: -5px;
+  position: absolute;
+  margin-right: 40px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 2px 1px 15px -9px #000000;
+  width: 160px;
+  height: 160px;
+  transition: all 0.2s ease;
+}
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  padding: 0;
+  margin: 0;
+  border: 0px solid #eeeeee;
+  transition: all 0.2s ease;
+}
